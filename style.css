@@ -7,6 +7,15 @@ body {
   color: #fff;
   line-height: 1.6;
 }
+
+:root{
+  --primary-color : #b90415;
+  --primary-color-hover : #d3071b;
+  --secondary-color : #103063;
+  --secondary-color-hover : #143f85;
+  --light-color : #f4f4f4;
+}
+
 /* Showcase */
 
 #showcase{
@@ -17,6 +26,7 @@ body {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
+  /*background-attachment: fixed;*/
 }
 
 .container{
@@ -71,7 +81,109 @@ nav a#openup {
   display: none;
 }
 
+img{
+  width: 100%;
+}
+
+.section{
+  padding: 2rem 0;
+}
+
+.section h3{
+  font-size: 2rem;
+}
+
+#entertainment{
+  background: url("img/section-bg.jpg") no-repeat bottom/cover;
+  background-attachment: fixed;
+  padding: 10rem 0;
+}
+
+.section-head{
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+.btn{
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn-primary{
+  background: var(--primary-color);
+}
+
+.btn-primary:hover{
+  background: var(--primary-color-hover);
+}
+
+.btn-secondary{
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover{
+  background: var(--secondary-color-hover);
+}
+
+
+.lead{
+  font-size: 1.3rem;
+}
+
+.mb{
+  margin-bottom: 1rem;
+}
+
+.mt{
+margin-top: 1rem;
+}
+
+.text-primary{
+  color: var(--primary-color);
+}
+
+.text-secondary{
+  color: var(--secondary-color);
+}
+
+.text-light{
+  color: var(--light-color);
+}
+
+.light-bg{
+  background: var(--light-color);
+  color: #333;
+}
+
+
+
 @media screen and (max-width: 580px) {
+  .hide-on-small{
+    display: none;
+  }
+
+  #showcase{
+    height: 50vh;
+  }
+
+  #showcase .container{
+    margin-top: 15vh;
+  }
+
+  #showcase h1{
+    font-size: 2rem;
+  }
+
+  #showcase h2{
+    font-size: 1.5rem;
+  }
+
   nav {
     height: auto;
     border-bottom: 0;
