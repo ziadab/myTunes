@@ -161,6 +161,20 @@ margin-top: 1rem;
   color: #333;
 }
 
+.gift-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
+}
+
+.gift-cards div a{
+  color: #0070c9;
+  text-decoration: none;
+}
+
+.gift-cards div a:hover{
+  text-decoration: underline;
+}
 
 
 @media screen and (max-width: 580px) {
