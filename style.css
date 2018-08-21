@@ -156,6 +156,10 @@ margin-top: 1rem;
   color: var(--light-color);
 }
 
+.text-center{
+  text-align: center;
+}
+
 .light-bg{
   background: var(--light-color);
   color: #333;
@@ -164,7 +168,7 @@ margin-top: 1rem;
 .gift-cards{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 150px;
+  grid-gap: 20px;
 }
 
 .gift-cards div a{
@@ -176,6 +180,31 @@ margin-top: 1rem;
   text-decoration: underline;
 }
 
+footer .footer-cols{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4,1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li:first-child{
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #444
+}
+
+footer .footer-bottom{
+  background: #333;
+  padding: 1rem;
+  width: 100%;
+}
 
 @media screen and (max-width: 580px) {
   .hide-on-small{
